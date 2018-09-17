@@ -1,0 +1,94 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.content-wrapper {
+	padding-top: 40px;
+	background: #f4f4f4;
+	padding-bottom: 30px;
+}
+
+.cart-content {
+	width: 95%;
+	margin: auto;
+	background: #fff;
+	border: none;
+	border-radius: 8px;
+	box-shadow: 0px 2px 4px 0px rgba(0,0,0,.25);
+	padding-bottom: 20px;
+}
+
+.cart-nav-bar {
+	height: 50px;
+	margin: 0 !important;
+	border: 1px solid #aaa;
+}
+
+.first-triangle {
+	border-top: 25px solid transparent;
+	border-left: 20px solid red;
+	border-bottom: 25px solid transparent;
+}
+.second-triangle {
+	border-top: 25px solid transparent;
+	border-left: 20px solid #f00;
+	border-bottom: 25px solid transparent;
+}
+
+.second-triangle{
+	outline: 1px solid #000;
+}
+
+.cart-nav-item {
+	width: 32.015%;
+	line-height: 50px;
+	text-align: center;
+	font-size: 1.2em;
+}
+
+.number-border-radius {
+	padding: 0 4px 2px 9px;
+	border: 1px solid #000;
+	border-radius: 50%;
+}
+
+.cart-total-product-label {
+	margin: 0;
+	height: 45px;
+	line-height: 45px;
+	width: 100%;
+	padding-left: 30px;
+	font-size: 18px;
+}
+
+.w-120 {
+	width: 120px;
+}
+
+th{
+	vertical-align: middle !important;
+}
+td{vertical-align: middle !important;}
+
+.align-center {
+	width: 80px;
+	text-align: center;
+}
+.pagination-container{
+	margin-right: -300px;
+	padding-left: 30px;
+}
+table{
+margin: 0}
+
+.table-button {
+	line-height: 38px;
+}
+
+.bg-orange {
+	background: #E46422;
+}
+
+.border-right {
+	border-right: 1px solid #bbb !important; 
+}

@@ -1,0 +1,11 @@
+@charset "utf-8";
+/* CSS Document */
+td{
+	padding: 0px 50px;
+}
+
+.table-order{height: 500px;}
+.table-payment{height: 400px;}
+.form-check-input {
+	    margin-top: .5rem;
+}
