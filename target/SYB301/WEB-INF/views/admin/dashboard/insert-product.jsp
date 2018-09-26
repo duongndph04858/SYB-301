@@ -88,7 +88,8 @@
 								<tr>
 									<td class="button-cover" colspan="4">
 										<button type="submit" class="btn btn-primary">Thêm</button>
-										&nbsp; <a class="btn btn-secondary">Hủy</a>
+										&nbsp; <a href="admin/dashboard/product/product-management?start=0"
+										class="btn btn-secondary">Hủy</a>
 									</td>
 								</tr>
 							</table>

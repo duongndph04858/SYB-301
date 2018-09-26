@@ -37,4 +37,10 @@ public class OrderServicesImpl implements OrderServices {
 		return orderDao.getAll(ssfac.getCurrentSession());
 	}
 
+	@Override
+	@Transactional(readOnly=true)
+	public Orders getById(int orderNo) {
+		return orderDao.getById(ssfac.getCurrentSession(),orderNo);
+	}
+
 }

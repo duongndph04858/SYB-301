@@ -15,4 +15,6 @@ public interface OrderRepositories {
 
 	List<Orders> getAll(Session session);
 
+	Orders getById(Session session, int orderNo);
+
 }

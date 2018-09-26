@@ -51,4 +51,19 @@ public class ProductServicesImpl implements ProductServices {
 		return productDao.insert(ssfactory.getCurrentSession(),product);
 	}
 
+
+	@Override
+	@Transactional(readOnly=true)
+	public List<Product> getByPage(int start) {
+		return productDao.getByPage(ssfactory.getCurrentSession(),start);
+	}
+
+
+	@Override
+	@Transactional(readOnly=true)
+	public List<Product> getProductByCategory(String category) {
+		return productDao.getListProductByCategory(ssfactory.getCurrentSession(),category);
+	}
+
+
 }

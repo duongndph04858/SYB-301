@@ -9,4 +9,6 @@ List<Product> getListProducts();
 List<Product> getProductByPage(int start,String categoryId);
 Product getProductById(int pID);
 boolean insertProduct(Product product);
+List<Product> getByPage(int start);
+List<Product> getProductByCategory(String category);
 }

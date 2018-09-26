@@ -52,4 +52,22 @@ public class OrderRepositoriesImpl implements OrderRepositories {
 		}
 	}
 
+	@Override
+	public Orders getById(Session session, int orderNo) {
+		try {
+			String hql = "from Orders where id=:id";
+			Query query = session.createQuery(hql);
+			query.setInteger("id", orderNo);
+			Orders order = (Orders) query.uniqueResult();
+			if (order != null) {
+				return order;
+			} else {
+				return new Orders();
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+			return new Orders();
+		}
+	}
+
 }

@@ -32,9 +32,12 @@ public class DashboardProductController {
 	ServletContext context;
 
 	@RequestMapping("product-management")
-	public String product(ModelMap md) {
-		List<Product> listP = productServices.getListProducts();
+	public String product(ModelMap md, @RequestParam int start) {
+		List<Product> list = productServices.getListProducts();
+		List<Product> listP = productServices.getByPage(start);
 		md.addAttribute("listP", listP);
+		int page2 = Math.round(list.size() / 10);
+		md.addAttribute("page2", page2);
 		return "admin/dashboard/product-management";
 	}
 
@@ -45,7 +48,7 @@ public class DashboardProductController {
 		return "admin/dashboard/insert-product";
 	}
 
-	@RequestMapping(value="insert",method=RequestMethod.POST)
+	@RequestMapping(value = "insert", method = RequestMethod.POST)
 	public String insert(@RequestParam String name, @RequestParam String category, @RequestParam MultipartFile image,
 			@RequestParam double amount, @RequestParam String priceUnit, @RequestParam double amountUnit,
 			@RequestParam String amountUnitType, @RequestParam String quality, @RequestParam long price,
@@ -58,7 +61,7 @@ public class DashboardProductController {
 			}
 			Product p = new Product();
 			Category c = categoryServices.getById(category);
-			p.setName(name);	
+			p.setName(name);
 			p.setCategoryId(c);
 			p.setImage(image.getOriginalFilename());
 			p.setAmount(amount);

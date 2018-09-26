@@ -54,7 +54,7 @@
 				</a>
 			</div>
 			<div class="menu-item d-flex  align-items-center">
-				<a href="admin/dashboard/product/product-management"
+				<a href="admin/dashboard/product/product-management?start=0"
 					class="menu-link"> Sản phẩm </a>
 			</div>
 			<div class="menu-item d-flex align-items-center">

@@ -83,8 +83,8 @@ th {
 										<td>${o.phone}</td>
 										<td>${o.dateCreate }</td>
 										<td><a class="editOrder"
-											href="OrderDetail.action?orderNo"> <i
-												class="fa fa-pencil icon-action" aria-hidden="true"></i>
+											href="admin/dashboard/order/order-detail?orderNo=${o.id }">
+												<i class="fa fa-pencil icon-action" aria-hidden="true"></i>
 										</a>&nbsp; <a class="deleteOrder" data-id=""> <i
 												class="fa fa-trash-o icon-action" data-toggle="modal"
 												data-target="#deleteOrderModal" aria-hidden="true"></i></a></td>

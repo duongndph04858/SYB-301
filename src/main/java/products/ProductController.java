@@ -26,8 +26,9 @@ public class ProductController {
 
 	@RequestMapping(value = "product", params = { "category", "start" })
 	public String getProductsByCategory(ModelMap md, @RequestParam int start, @RequestParam String category) {
-		List<Product> lst = pServices.getProductByPage(start, category);
-		md.addAttribute("product", lst);
+		List<Product> lst = pServices.getProductByCategory(category);
+		List<Product> lstByP = pServices.getProductByPage(start, category);
+		md.addAttribute("product", lstByP);
 		int page = Math.round(lst.size() / 9);
 		md.addAttribute("page", page);
 		return "users/product";
@@ -44,7 +45,7 @@ public class ProductController {
 		cartDao.addToCart(product);
 		session.setAttribute("cart", cartDao);
 		session.setAttribute("total", cartDao.getTotalPrice());
-		return "users/cart";
+		return "redirect:/cart";
 
 	}
 

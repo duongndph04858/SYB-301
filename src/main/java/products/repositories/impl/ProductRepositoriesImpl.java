@@ -79,4 +79,42 @@ public class ProductRepositoriesImpl implements ProductRepositories {
 
 	}
 
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<Product> getByPage(Session currentSession, int start) {
+		try {
+			String hql = "from Product";
+			Query query = currentSession.createQuery(hql);
+			query.setFirstResult(start);
+			query.setMaxResults(10);
+			if (query.list() != null) {
+				return query.list();
+			} else {
+				return new ArrayList<Product>();
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+			return new ArrayList<Product>();
+		}
+	}
+
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<Product> getListProductByCategory(Session currentSession, String category) {
+		try {
+			String hql = "from Product where categoryId.id =:categoryId";
+			Query query = currentSession.createQuery(hql);
+			query.setParameter("categoryId", category);
+			query.setMaxResults(9);
+			if (query.list() != null) {
+				return query.list();
+			} else {
+				return new ArrayList<Product>();
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+			return new ArrayList<Product>();
+		}
+	}
+
 }

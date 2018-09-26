@@ -14,4 +14,8 @@ List<Product> getListProductByPage(Session session, int start,String categoryId)
 Product getListProductById(Session session, int pID);
 
 boolean insert(Session session,Product product);
+
+List<Product> getByPage(Session currentSession, int start);
+
+List<Product> getListProductByCategory(Session currentSession, String category);
 }

@@ -32,7 +32,7 @@
 					</a>
 				</div>
 				&nbsp; <a href="#" class="contact-link"> Chợ Mễ Trì Hạ, Mễ Trì,
-					Nam Từ Liên, Hà Nội </a>
+					Nam Từ Liêm, Hà Nội </a>
 			</div>
 		</div>
 			<script type="text/javascript"

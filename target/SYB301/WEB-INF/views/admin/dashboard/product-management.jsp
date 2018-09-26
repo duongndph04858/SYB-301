@@ -111,6 +111,18 @@
 							</c:forEach>
 						</tbody>
 					</table>
+					<nav aria-label="Page navigation example p-3">
+						<ul class="pagination">
+							<c:if test="${page2>1 }">
+								<c:forEach varStatus="stt" begin="0" end="${page2}">
+									<li class="page-item"><a class="page-link"
+										href="admin/dashboard/product/product-management?start=${stt.index*10 }">
+											<span aria-hidden="true">${stt.index+1 }</span>
+									</a></li>
+								</c:forEach>
+							</c:if>
+						</ul>
+					</nav>
 				</div>
 			</div>
 		</div>
