@@ -1,0 +1,83 @@
+body {
+	background: #f5f5f5
+}
+
+.wrapper {
+	padding: 0;
+}
+
+.content {
+	margin: 0;
+}
+
+
+.manager-title {
+	padding: 10px 50px 0px;
+}
+
+.row {
+	margin: 0;
+	width: 100%;
+}
+
+.total-label {
+	font-size: 24px;
+	color: #008fe5;
+}
+
+
+.top10-label {
+	padding: 30px 15px 10px;
+}
+
+.fa-2x {
+	font-size: 1.5em !important;
+	color: #008fe5;
+}
+
+#productTable tr td {
+	vertical-align: middle !important;
+}
+
+#productTable tr th {
+	vertical-align: middle !important;
+}
+
+.btn-default {
+	border-color: #008fe5;
+	color: #008fe5 !important;
+}
+
+.btn-w {
+	border: 1px solid #ddd;
+}
+
+.a-black {
+	color: #000;
+}
+
+.center {
+	text-align: center;
+}
+
+.error {
+	color: red !important;
+	font-weight: bold;
+}
+
+.errorMessage {
+	list-style: none;
+	font-weight: bold;
+	color: red !important;
+}
+#productTable_paginate{
+	margin-bottom: 5px;
+}
+
+#Status-select{
+	visibility: hidden;
+}
+
+#Category-select{
+	border: 1px solid #ccc;
+}

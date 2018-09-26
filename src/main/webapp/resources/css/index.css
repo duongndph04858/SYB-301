@@ -1,0 +1,125 @@
+@charset "utf-8";
+/* CSS Document */
+
+.p-0 {
+	padding: 0 !important;
+}
+
+.title {
+	height: 60px;
+	text-align: center;
+	margin: 0;
+	line-height: 60px;
+	z-index: 5;
+}
+.title-label {
+	font-size: 40px;
+	color: #F76108;
+}
+.content-top {
+	background: #fff;
+	height: 570px;
+}
+.content-item {
+	background: #fff;
+	height: 440px;
+	margin: 0px 20px;
+}
+.content-item-top {
+	width: 90%;
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.thumb-content-item {
+	padding-top:100%;
+	width: 100%;
+	background-color: #fff;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: none;
+	border: 1px solid #bbb;
+	box-shadow: 0px 2px 4px 0px rgba(0,0,0,.25);
+	border-radius: 50%;
+}
+.content-item-bottom {
+	text-align: center;
+}
+.description {
+	font-size: 18px;
+}
+.wrapper-top {
+	position: relative;
+}
+.wrapper-bottom {
+	position: relative;
+}
+.img-cover-content-top {
+	position: absolute;
+	z-index: 3;
+	width: 200px;
+	top: 0px;
+	left: 0px;
+}
+.img-cover-content-bottom {
+	position: absolute;
+	z-index: 3;
+	width: 15%;
+	bottom: 100px;
+	right: 0px;
+}
+.img-cover-about-top {
+	position: absolute;
+	z-index: 3;
+	width: 350px;
+	top: -170px;
+	left: -120px;
+}
+.img-cover-about-bottom {
+	position: absolute;
+	z-index: 3;
+	width: 300px;
+	top: -15px;
+	right: 0px;
+}
+.img-cover-about-left-bottom {
+	position: absolute;
+	z-index: 3;
+	width: 300px;
+	height: 400px;
+	bottom: -100px;
+	left: 0px;
+}
+.back-space {
+	margin: 0;
+	background: #eee9e5 url("../images/bg_logopattern_light.png") repeat 0 0;
+	height: 60px;
+}
+.about-paragraph {
+	font-size: 20px;
+	line-height: 30px;
+	display: inline-block;
+	padding-bottom: 15px;
+}
+.mission-wrapper {
+	padding-bottom: 25px;
+	background: #eee9e5 url("../images/bg_logopattern_light.png") repeat 0 0;
+}
+
+.mission-item {
+	height: 130px;
+	padding: 10px 15px;
+	border-right: 1px solid #bbb;
+}
+
+.mission {
+	padding:0;
+}
+
+.mission-thumb {
+	width: 100px;
+	height: 100px;
+	border: none;
+	background: #fff;
+	border-radius: 50%;
+}
