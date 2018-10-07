@@ -74,7 +74,7 @@ public class DashboardProductController {
 			boolean result = productServices.insertProduct(p);
 			if (result == true) {
 				redirect.addFlashAttribute("notice", "Thêm sản phẩm mới thành công!");
-				return "redirect:/admin/dashboard/product/product-management";
+				return "redirect:/admin/dashboard/product/product-management?start=0";
 			} else {
 				List<Category> lstC = categoryServices.getAll();
 				md.addAttribute("listC", lstC);

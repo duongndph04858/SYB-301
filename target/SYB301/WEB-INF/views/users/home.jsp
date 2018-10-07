@@ -96,7 +96,9 @@
 		<div class="mission-item col-3">
 			<div class="mission row">
 				<div class="col-6 p-0">
-					<div class="mission-thumb"></div>
+					<div class="mission-thumb">
+						<div class="mission-image" style="background-image: url('resources/images/hangdau.jpg');"></div>
+					</div>
 				</div>
 				<div class="col-6 p-0">
 					<div class="mission-text">Cung cấp sản phẩm hàng đầu cho
@@ -107,7 +109,9 @@
 		<div class="mission-item col-3">
 			<div class="mission row">
 				<div class="col-6 p-0">
-					<div class="mission-thumb"></div>
+					<div class="mission-thumb">
+						<div class="mission-image" style="background-image: url('resources/images/trongmai.jpg');"></div>
+					</div>
 				</div>
 				<div class="col-6 p-0">
 					<div class="mission-text">Góp phần tạo nên giá trị hải sản Hạ
@@ -118,7 +122,9 @@
 		<div class="mission-item col-3">
 			<div class="mission row">
 				<div class="col-6 p-0">
-					<div class="mission-thumb"></div>
+					<div class="mission-thumb">
+					<div class="mission-image" style="background-image: url('resources/images/danhca.jpg');"></div>
+					</div>
 				</div>
 				<div class="col-6 p-0">
 					<div class="mission-text">Tạo cơ hội phát triển cho cư dân
@@ -129,7 +135,9 @@
 		<div class="mission-item col-3">
 			<div class="mission row">
 				<div class="col-6 p-0">
-					<div class="mission-thumb"></div>
+					<div class="mission-thumb">
+						<div class="mission-image" style="background-image: url('resources/images/3.png');"></div>
+					</div>
 				</div>
 				<div class="col-6 p-0">
 					<div class="mission-text">Luôn đồng hành cùng chất lượng sản
